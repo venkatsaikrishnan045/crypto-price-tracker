@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Crypto Price Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Crypto Price Tracker 💹</h1>
+    <select id="cryptoSelect">
+      <option value="bitcoin">Bitcoin (BTC)</option>
+      <option value="ethereum">Ethereum (ETH)</option>
+      <option value="dogecoin">Dogecoin (DOGE)</option>
+      <option value="solana">Solana (SOL)</option>
+      <option value="ripple">Ripple (XRP)</option>
+      <option value="cardano">Cardano (ADA)</option>
+      <option value="polkadot">Polkadot (DOT)</option>
+      <option value="litecoin">Litecoin (LTC)</option>
+      <option value="avalanche-2">Avalanche (AVAX)</option>
+      <option value="chainlink">Chainlink (LINK)</option>
+      <option value="stellar">Stellar (XLM)</option>
+      <option value="uniswap">Uniswap (UNI)</option>
+      <option value="matic-network">Polygon (MATIC)</option>
+      <option value="shiba-inu">Shiba Inu (SHIB)</option>
+      <option value="tron">TRON (TRX)</option>
+      <option value="cosmos">Cosmos (ATOM)</option>
+      <option value="near">Near Protocol (NEAR)</option>
+      <option value="vechain">VeChain (VET)</option>
+      <option value="aave">Aave (AAVE)</option>
+      <option value="the-graph">The Graph (GRT)</option>
+      <option value="tezos">Tezos (XTZ)</option>
+      <option value="fantom">Fantom (FTM)</option>
+    </select>
+    <div class="price-box">
+      <h2 id="price">--</h2>
+      <p>Current Price (USD)</p>
+    </div>
+    <canvas id="priceChart"></canvas>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
